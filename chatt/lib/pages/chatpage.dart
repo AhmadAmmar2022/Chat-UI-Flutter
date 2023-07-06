@@ -1,3 +1,4 @@
+import 'package:chatt/Screens/SelectContact.dart';
 import 'package:chatt/model/ChatModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -14,7 +15,7 @@ class chatpage extends StatefulWidget {
 
 class _chatpageState extends State<chatpage> {
   List <ChatModel> chats =[
-    ChatModel(name: "Ahmad", icon: "groups.svg", isGroup: false, time: "4.9", currentMessage: "hello frontier",  id: 1),
+    ChatModel(name: "Ahmad", icon: "groups.svg", isGroup: false, time: "4.9", currentMessage: "hello frontier",  id: 1,),
         ChatModel(name: "mohmmad", icon: "person.svg", isGroup: false, time: "4.9", currentMessage: "hello frontier",  id: 1),
             ChatModel(name: "samer", icon: "groups.svg", isGroup: true, time: "4.9", currentMessage: "hello frontier",  id: 1),
                 ChatModel(name: "Ali", icon: "person.svg", isGroup: false, time: "4.9", currentMessage: "hello frontier",  id: 1),
@@ -26,8 +27,8 @@ class _chatpageState extends State<chatpage> {
     return Scaffold(
         floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Navigator.push(context,
-          //     MaterialPageRoute(builder: (builder) => SelectContact()));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (builder) => SelectContact()));
         },
         child: Icon(
           Icons.chat,
