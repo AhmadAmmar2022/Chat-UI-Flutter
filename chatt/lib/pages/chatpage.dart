@@ -7,21 +7,17 @@ import 'package:flutter/src/widgets/framework.dart';
 import '../customwidget/CustomCard.dart';
 
 class chatpage extends StatefulWidget {
-  const chatpage({super.key});
+   final List<ChatModel> chatmodels;
+  final ChatModel sourchat;
+  
+  const chatpage({super.key, required this.chatmodels, required this.sourchat, });
 
   @override
   State<chatpage> createState() => _chatpageState();
 }
 
 class _chatpageState extends State<chatpage> {
-  List <ChatModel> chats =[
-    ChatModel(name: "Ahmad", icon: "groups.svg", isGroup: false, time: "4.9", currentMessage: "hello frontier",  id: 1,),
-        ChatModel(name: "mohmmad", icon: "person.svg", isGroup: false, time: "4.9", currentMessage: "hello frontier",  id: 1),
-            ChatModel(name: "samer", icon: "groups.svg", isGroup: true, time: "4.9", currentMessage: "hello frontier",  id: 1),
-                ChatModel(name: "Ali", icon: "person.svg", isGroup: false, time: "4.9", currentMessage: "hello frontier",  id: 1),
-                    ChatModel(name: "samer", icon: "groups.svg", isGroup: true, time: "4.9", currentMessage: "hello frontier",  id: 1),
-                        ChatModel(name: "roodi", icon: "person.svg", isGroup: false, time: "4.9", currentMessage: "hello frontier",  id: 1),
-  ]; 
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,9 +32,10 @@ class _chatpageState extends State<chatpage> {
         ),
       ),
       body:ListView.builder(
-        itemCount: chats.length,
+        itemCount:widget. chatmodels.length,
         itemBuilder: (contex, index) => CustomCard(
-          chatModel: chats[index],
+                chatModel: widget.chatmodels[index],
+                sourchat: widget.sourchat,
           
         ),
       ),

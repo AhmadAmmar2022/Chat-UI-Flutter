@@ -1,27 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class ButtomCard extends StatelessWidget {
-  const ButtomCard({
-    Key? key,
-
-  }) : super(key: key);
- 
+class ButtonCard extends StatelessWidget {
+  const ButtonCard({Key ?key, required this.name, required this.icon}) : super(key: key);
+  final String name;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(
         radius: 23,
-        child: 
-          Icon(Icons.group_add,
+        child: Icon(
+          icon,
           size: 26,
           color: Colors.white,
         ),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.amber
       ),
       title: Text(
-        "مجموعة جديدة",
+        name,
         style: TextStyle(
           fontSize: 15,
           fontWeight: FontWeight.bold,

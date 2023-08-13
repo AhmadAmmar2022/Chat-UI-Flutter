@@ -5,9 +5,9 @@ import 'package:flutter_svg/svg.dart';
 import '../Screens/IndividualPage.dart';
 
 class CustomCard extends StatelessWidget {
-  const CustomCard({ Key? key,  required this.chatModel}) : super(key: key);
+  const CustomCard({ Key? key,  required this.chatModel, required this.sourchat}) : super(key: key);
    final ChatModel chatModel;
-
+  final ChatModel sourchat;
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -16,26 +16,26 @@ class CustomCard extends StatelessWidget {
             context,
             MaterialPageRoute(
                 builder: (contex) => individualPage(
-                     chatModel: chatModel,
-                      // sourchat: sourchat,
+                      chatModel: chatModel,
+                      sourchat: sourchat,
                     )));
       },
       child: Column(
         children: [
           ListTile(
             leading: CircleAvatar(
-              radius: 30,
+              radius: 23,
               child: SvgPicture.asset(
                 chatModel.isGroup ? "assets/groups.svg" : "assets/person.svg",
                 color: Colors.white,
                 height: 36,
                 width: 36,
               ),
-              backgroundColor:Color.fromARGB(255, 159, 167, 190)
+              backgroundColor: Colors.blueGrey,
             ),
             title: Text(
-                chatModel.name,
-                style: TextStyle(
+              chatModel.name,
+              style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),

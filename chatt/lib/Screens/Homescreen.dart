@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
+import '../model/ChatModel.dart';
 import '../pages/chatpage.dart';
 
 class Homescreen extends StatefulWidget {
-  const Homescreen({super.key});
+    final List<ChatModel> chatmodels;
+  final ChatModel sourchat;
+  const Homescreen({super.key, required this.chatmodels, required this.sourchat});
 
   @override
   State<Homescreen> createState() => _HomescreenState();
@@ -60,7 +63,7 @@ class _HomescreenState extends State<Homescreen>  with SingleTickerProviderState
               text: "المحادثات",
             ),
             Tab(
-              text: "الحالات",
+              text: "المجموعات",
             ),
             Tab(
               text: "المكالمات ",
@@ -72,7 +75,8 @@ class _HomescreenState extends State<Homescreen>  with SingleTickerProviderState
         controller: _controller,
         children: [
          Text("1"),
-       chatpage(),
+         chatpage( chatmodels: widget.chatmodels,
+            sourchat: widget.sourchat,),
           Text("3"),
           Text("4"),
         ],
