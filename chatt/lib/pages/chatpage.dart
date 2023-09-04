@@ -1,10 +1,11 @@
-import 'package:chatt/Screens/SelectContact.dart';
 import 'package:chatt/model/ChatModel.dart';
+import 'package:chatt/view/Screens/SelectContact.dart';
+import 'package:chatt/view/customwidget/CustomCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-import '../customwidget/CustomCard.dart';
+
 
 class chatpage extends StatefulWidget {
    final List<ChatModel> chatmodels;
