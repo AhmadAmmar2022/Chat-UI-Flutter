@@ -1,6 +1,6 @@
 import 'package:chatt/core/constant/color.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+
 
 class ButtonCard extends StatelessWidget {
   const ButtonCard({Key ?key, required this.name, required this.icon}) : super(key: key);
@@ -8,7 +8,7 @@ class ButtonCard extends StatelessWidget {
   final IconData icon;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext contesxt) {
     return ListTile(
       leading: CircleAvatar(
         radius: 23,

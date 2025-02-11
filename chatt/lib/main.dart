@@ -29,7 +29,6 @@ class MyApp extends StatelessWidget {
       theme: controller.appTheme, 
       // routes: routes,
       getPages: routes,
-  
    
     );
   }

@@ -1,6 +1,6 @@
 import 'package:chatt/model/ChatModel.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+
 
 import '../Screens/IndividualPage.dart';
 
@@ -25,13 +25,8 @@ class CustomCard extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(
               radius: 23,
-              child: SvgPicture.asset(
-                chatModel.isGroup ? "assets/groups.svg" : "assets/person.svg",
-                color: Colors.white,
-                height: 36,
-                width: 36,
-              ),
-              backgroundColor: Colors.blueGrey,
+              child:Icon(Icons.person),
+              backgroundColor: Color.fromARGB(255, 105, 190, 247),
             ),
             title: Text(
               chatModel.name,

@@ -80,13 +80,13 @@ class _SelectContactState extends State<SelectContact> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.amber,
+          backgroundColor: Color.fromARGB(255, 66, 153, 252),
           title: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "اختر جهة اتصال",
+             "Select contacts",
                 style: TextStyle(
                   fontSize: 19,
                   fontWeight: FontWeight.bold,
@@ -135,7 +135,7 @@ class _SelectContactState extends State<SelectContact> {
             itemCount: contacts.length+1,
             itemBuilder: (context, index) {
               if (index==0){
-              return InkWell(child: ButtonCard(name:"مجموعة جددية ", icon:Icons.group ,),onTap:(){
+              return InkWell(child: ButtonCard(name:"Create a new group ", icon:Icons.group ,),onTap:(){
                              Navigator.push(context,
                         MaterialPageRoute(builder: (builder) => CreateGroup()));
               } ,)

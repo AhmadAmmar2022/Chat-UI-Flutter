@@ -47,14 +47,14 @@ class MyTranslation extends Translations {
         },
         "en": {
           "1": "Choose Language",
-          "2": "Choose Product",
+          "2": "The app ensures security",
           "3":
-              "We Have a 100k Product , Choose \n Your Product From  Our \n E-commerce Shop",
-          "4": "Easy And Safe Paymnet",
-          "5": "You can pay in cash \n or through payment gateways",
-          "6": "Track Your Order",
+              "The application is secure and \n uses high-level encryption  \n algorithms to protect data.",
+          "4": "Easy and good user experience",
+          "5": "We focus on providing  \n a simple and smooth user experience \n or through payment gateways",
+          "6": "The application is free",
           "7":
-              "The order can be tracked at every stage \n until it reaches you",
+              "More than 100,000 users use the app for free.",
           "8": "Continue",
           "9": "Sign In",
           "10": "Welcome Back",

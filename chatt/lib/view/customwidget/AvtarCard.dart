@@ -1,6 +1,6 @@
 import 'package:chatt/model/ChatModel.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+
 
 
 class AvatarCard extends StatelessWidget {
@@ -18,19 +18,13 @@ class AvatarCard extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 23,
-                child: SvgPicture.asset(
-                  "assets/person.svg",
-                  color: Colors.white,
-                  height: 30,
-                  width: 30,
-                ),
-                backgroundColor: Colors.blueGrey[200],
+                child:Icon(Icons.person_remove)
               ),
               Positioned(
                 bottom: 0,
                 right: 0,
                 child: CircleAvatar(
-                  backgroundColor: Colors.grey,
+                  backgroundColor: Colors.red,
                   radius: 11,
                   child: Icon(
                     Icons.clear,

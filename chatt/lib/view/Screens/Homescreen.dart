@@ -28,7 +28,7 @@ class _HomescreenState extends State<Homescreen>  with SingleTickerProviderState
   return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColor.primaryColor,
-        title: Text("Whatsapp frontier"),
+        title: Text("Whatsapp "),
         actions: [
           IconButton(icon: Icon(Icons.search), onPressed: () {}),
           PopupMenuButton<String>(
@@ -54,6 +54,7 @@ class _HomescreenState extends State<Homescreen>  with SingleTickerProviderState
           )
         ],
         bottom: TabBar(
+      
           
           controller: _controller,
           indicatorColor: Colors.white,
@@ -62,13 +63,13 @@ class _HomescreenState extends State<Homescreen>  with SingleTickerProviderState
               icon: Icon(Icons.camera_alt),
             ),
             Tab(
-              text: "المحادثات",
+              text: "chats",
             ),
             Tab(
-              text: "المجموعات",
+              text: "Groups",
             ),
             Tab(
-              text: "المكالمات ",
+              text: "calls ",
             )
           ],
         ),
@@ -76,11 +77,11 @@ class _HomescreenState extends State<Homescreen>  with SingleTickerProviderState
       body: TabBarView(
         controller: _controller,
         children: [
-         Text("1"),
+         Center(child: Text("herzlich willkommen")),
          chatpage( chatmodels: widget.chatmodels,
             sourchat: widget.sourchat,),
-          Text("3"),
-          Text("4"),
+          Center(child: Text("Keine Gruppen")),
+          Center(child: Text("Keine Anrufe")),
         ],
       ),
     );

@@ -23,13 +23,14 @@ class _chatpageState extends State<chatpage> {
   Widget build(BuildContext context) {
     return Scaffold(
         floatingActionButton: FloatingActionButton(
+          backgroundColor: Color.fromARGB(255, 99, 158, 247),
         onPressed: () {
           Navigator.push(context,
               MaterialPageRoute(builder: (builder) => SelectContact()));
         },
         child: Icon(
           Icons.chat,
-          color: Colors.white,
+          color: Color.fromARGB(255, 255, 255, 255),
         ),
       ),
       body:ListView.builder(

@@ -2,10 +2,11 @@ import 'dart:convert';
 
 import 'package:chatt/model/ChatModel.dart';
 import 'package:chatt/model/MessageModel.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_svg/svg.dart';
+
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../customwidget/OwnMessgaeCrad.dart';
@@ -119,11 +120,11 @@ void saveMessages() async {
         // fit: BoxFit.cover,
         // ),
         Scaffold(
-          backgroundColor: Color.fromARGB(207, 255, 251, 251),
+          backgroundColor: Color.fromARGB(207, 251, 252, 255),
           appBar: PreferredSize(
             preferredSize: Size.fromHeight(60),
             child: AppBar(
-              backgroundColor: Colors.amber,
+              backgroundColor: Color.fromARGB(255, 243, 244, 245),
               leadingWidth: 70,
               titleSpacing: 0,
               leading: InkWell(
@@ -138,16 +139,9 @@ void saveMessages() async {
                       size: 24,
                     ),
                     CircleAvatar(
-                      child: SvgPicture.asset(
-                        widget.chatModel.isGroup
-                            ? "assets/groups.svg"
-                            : "assets/person.svg",
-                        color: Colors.white,
-                        height: 36,
-                        width: 36,
-                      ),
+                      child:Icon(Icons.person),
                       radius: 20,
-                      backgroundColor: Colors.blueGrey,
+                      backgroundColor: Color.fromARGB(255, 184, 192, 214),
                     ),
                   ],
                 ),
@@ -304,7 +298,7 @@ void saveMessages() async {
                                           IconButton(
                                             icon: Icon(Icons.attach_file),
                                             onPressed: () {
-                                              showModalBottomSheet(
+                                              showModalBottomSheet(  
                                                   backgroundColor:
                                                       Colors.transparent,
                                                   context: context,
@@ -331,7 +325,7 @@ void saveMessages() async {
                                 ),
                                 child: CircleAvatar(
                                   radius: 25,
-                                  backgroundColor: Colors.amber,
+                                  backgroundColor: Colors.green,
                                   child: IconButton(
                                     icon: Icon(
                                       sendButton ? Icons.send : Icons.mic,
@@ -415,10 +409,10 @@ void saveMessages() async {
 
   Widget bottomSheet() {
     return Container(
-      height: 188,
+      height: 200,
       width: MediaQuery.of(context).size.width,
       child: Card(
-        margin: const EdgeInsets.all(18.0),
+        margin: const EdgeInsets.all(15.0),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),

@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:chatt/model/ChatModel.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
 
 
 
@@ -19,24 +19,19 @@ class ContactCard extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 23,
-              child: SvgPicture.asset(
-                "assets/person.svg",
-                color: Colors.white,
-                height: 30,
-                width: 30,
-              ),
-              backgroundColor: Colors.blueGrey[200],
+              child: Icon(Icons.person),
+              backgroundColor:  Color.fromARGB(255, 99, 158, 247),
             ),
             contact.select
                 ? Positioned(
                     bottom: 4,
                     right: 5,
                     child: CircleAvatar(
-                      backgroundColor: Colors.teal,
+                      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
                       radius: 11,
                       child: Icon(
                         Icons.check,
-                        color: Colors.white,
+                        color: Color.fromARGB(255, 0, 15, 65),
                         size: 18,
                       ),
                     ),

@@ -22,7 +22,7 @@ class _namegrpupState extends State<namegrpup> {
         title: Text('اضف اسم للمجموعة'),
       ),
       floatingActionButton: FloatingActionButton(
-            backgroundColor: Color(0xFF128C7E),
+            backgroundColor: Color.fromARGB(255, 131, 170, 255),
             onPressed: () {
               // Get.to(groups(numderperson:numderperson));
             },
