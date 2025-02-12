@@ -1,7 +1,6 @@
 <h1 style="color:blue; font-weight:bold;">🌟  chat-UI-flutter</h1>
 
-- [🌐 Language Selection](#language-selection)
-- ## 🌐 Language Selection <a name="language-selection"></a>
+
 Description of the language selection screen.  
 ![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20183914.png)
 
