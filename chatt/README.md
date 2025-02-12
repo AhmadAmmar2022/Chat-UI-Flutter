@@ -3,21 +3,26 @@
 ### 🔹 App Interface  
 ![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20183914.png)
 
-### 🔹 Login Screen  
-
-
-### 🔹 Chat Screen  
-
-<!-- العنوان الرئيسي مع تنسيق بلون أزرق -->
+<!-- Title with bold and blue color -->
 <h1 style="color:blue; font-weight:bold;">🌟 Project Title: My Awesome Project</h1>
 
 ---
 
 ## 📋 Table of Contents
-- [🔐 تسجيل الدخول](#login)
-- [🏠 الشاشة الرئيسية](#home-screen)
-- [🖼️ عرض الصور](#gallery)
+- [🔐 Login](#login)
+- [🏠 Home Screen](#home-screen)
+- [🖼️ Gallery](#gallery)
 
+---
+
+## 🔐 Login <a name="login"></a>
+Explain how users can log in to the application, including clear steps and instructions.
+
+## 🏠 Home Screen <a name="home-screen"></a>
+Description of the home screen with an illustrative screenshot.
+
+## 🖼️ Gallery <a name="gallery"></a>
+[Click here to view the gallery](https://example.com/gallery) 
 ---
 
 ## 🔐 تسجيل الدخول <a name="login"></a>
