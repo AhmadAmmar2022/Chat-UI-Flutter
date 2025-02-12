@@ -1,19 +1,12 @@
-## 📸 Screenshots
-
-### 🔹 App Interface  
-![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20183914.png)
-
-<!-- Title with bold and blue color -->
 <h1 style="color:blue; font-weight:bold;">🌟 Project Title: My Awesome Project</h1>
 
----
+- [🌐 Language Selection](#language-selection)
+- ## 🌐 Language Selection <a name="language-selection"></a>
+Description of the language selection screen.  
+[Click here to view the image](https://example.com/language-selection-image)
+![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20183914.png)
 
-## 📋 Table of Contents
-- [🔐 Login](#login)
-- [🏠 Home Screen](#home-screen)
-- [🖼️ Gallery](#gallery)
 
----
 
 ## 🔐 Login <a name="login"></a>
 Explain how users can log in to the application, including clear steps and instructions.
@@ -30,15 +23,13 @@ Description of the home screen with an illustrative screenshot.
 ---
 
 ## 📋 Table of Contents
-- [🌐 Language Selection](#language-selection)
+
 - [🆕 Create Account](#create-account)
 - [🔐 Login](#login)
 
 ---
 
-## 🌐 Language Selection <a name="language-selection"></a>
-Description of the language selection screen.  
-[Click here to view the image](https://example.com/language-selection-image)
+
 
 ---
 
