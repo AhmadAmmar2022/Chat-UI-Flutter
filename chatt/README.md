@@ -20,7 +20,7 @@
 ![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20195030.png)
 ## 5-Sign Up 
 ![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20195139.png)
-## 6-Create Account Interface with Verification
+## 6-Sign Up e with Verification
 ![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20195357.png)
 ## 7-Home Screen
 ![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20220242.png)
