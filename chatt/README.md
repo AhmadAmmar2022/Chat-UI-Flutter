@@ -26,7 +26,7 @@
 ![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20220242.png)
 ## 8-Select Contact
 ![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20231820.png)
-## 3-Onboarding 3
+## 9-New Group
 ![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20233958.png)
-## 3-Onboarding 3
+## 10-Individual Page
 ![App Interface](https://github.com/AhmadAmmar2022/Chat-UI-Flutter/blob/main/chatt/Screenshots-chat/Screenshot%202025-02-07%20235736.png)
